@@ -7,7 +7,7 @@ export function AboutSection() {
       <section className="py-24 px-6 bg-black">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 font-orbitron">
-            ПОРТАЛ подойдёт вам, если вы:
+            ПОР<span className="text-red-500">ТАЛ</span> подойдёт вам, если вы:
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
             <div>

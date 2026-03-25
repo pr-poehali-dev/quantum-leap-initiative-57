@@ -9,7 +9,7 @@ export function CTASection() {
         </p>
         <div className="border border-red-500/30 rounded-2xl p-8 bg-red-500/5 max-w-xl mx-auto mb-10">
           <p className="text-white text-lg leading-relaxed">
-            ПОРТАЛ не гарантирует лёгкую жизнь.<br />
+            ПОР<span className="text-red-500">ТАЛ</span> не гарантирует лёгкую жизнь.<br />
             Но он делает почти невозможным возвращение к старой версии себя.
           </p>
         </div>

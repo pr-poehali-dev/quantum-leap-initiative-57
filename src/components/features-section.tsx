@@ -37,7 +37,7 @@ export function FeaturesSection() {
             </div>
           </div>
           <p className="mt-10 text-white text-xl font-semibold border-l-4 border-red-500 pl-5">
-            Это и есть точка перехода. Именно для неё создан ПОРТАЛ.
+            Это и есть точка перехода. Именно для неё создан ПОР<span className="text-red-500">ТАЛ</span>.
           </p>
         </div>
       </section>
@@ -46,10 +46,10 @@ export function FeaturesSection() {
       <section className="py-24 px-6 bg-zinc-950">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 font-orbitron">
-            ПОРТАЛ — это пространство перехода
+            ПОР<span className="text-red-500">ТАЛ</span> — это пространство перехода
           </h2>
           <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-            ПОРТАЛ — это пространство, где происходит смена внутренней архитектуры личности.
+            ПОР<span className="text-red-500">ТАЛ</span> — это пространство, где происходит смена внутренней архитектуры личности.
           </p>
           <p className="text-gray-400 text-base mb-6">Когда меняется внутренняя позиция человека:</p>
           <ul className="space-y-4 mb-10">
@@ -61,7 +61,7 @@ export function FeaturesSection() {
             ))}
           </ul>
           <p className="text-red-400 text-lg font-space-mono border border-red-500/30 rounded-xl p-5 bg-red-500/5">
-            ПОРТАЛ — это разрыв со старой версией себя и стабилизация нового уровня личности.
+            ПОР<span className="text-red-500">ТАЛ</span> — это разрыв со старой версией себя и стабилизация нового уровня личности.
           </p>
         </div>
       </section>
