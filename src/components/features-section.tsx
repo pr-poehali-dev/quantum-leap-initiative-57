@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
+    title: "Глубокая трансформация",
+    description: "Практические инструменты для работы с внутренними блоками, убеждениями и паттернами, которые мешают профессиональному росту.",
     icon: "brain",
-    badge: "ИИ",
+    badge: "Основа",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
-  },
-  {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
+    title: "Экспертное сообщество",
+    description: "Живое пространство для обмена опытом с коллегами — психологами, коучами, терапевтами и другими специалистами помогающих профессий.",
     icon: "link",
-    badge: "Связь",
+    badge: "Сообщество",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Рост практики",
+    description: "Конкретные методики для привлечения клиентов, масштабирования услуг и выхода на новый уровень дохода.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Результат",
+  },
+  {
+    title: "Авторские методы",
+    description: "Уникальная система практик, разработанная специально для помогающих профессионалов с учётом специфики их работы.",
+    icon: "zap",
+    badge: "Авторский",
+  },
+  {
+    title: "Личная проработка",
+    description: "Индивидуальный путь трансформации с поддержкой на каждом этапе — от осознания до устойчивых изменений.",
+    icon: "globe",
+    badge: "Личное",
+  },
+  {
+    title: "Проверенный результат",
+    description: "Методология, основанная на реальных кейсах сотен специалистов, уже прошедших трансформацию в Портале.",
+    icon: "lock",
+    badge: "Гарантия",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Что вы получите в Портале</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Практикум создан для тех, кто помогает другим расти — и сам готов выйти на новый уровень
           </p>
         </div>
 
@@ -62,10 +62,10 @@ export function FeaturesSection() {
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
                     {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
+                    {feature.icon === "lock" && "&#10004;"}
+                    {feature.icon === "globe" && "&#127775;"}
                     {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
+                    {feature.icon === "link" && "&#129309;"}
                     {feature.icon === "target" && "&#127919;"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
