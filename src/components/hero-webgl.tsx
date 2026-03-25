@@ -173,16 +173,6 @@ export const Hero3DWebGL = () => {
             {subtitle}
           </div>
           <div
-            className={subtitleVisible ? "fade-in-subtitle flex gap-6 text-sm md:text-base text-red-400 font-space-mono" : "flex gap-6 text-sm md:text-base text-red-400 font-space-mono"}
-            style={{
-              animationDelay: `${titleWords.length * 0.13 + 0.6 + subtitleDelay}s`,
-              opacity: subtitleVisible ? undefined : 0,
-            }}
-          >
-            <span>📅 Старт: 6 апреля</span>
-            <span>🌐 Формат: онлайн</span>
-          </div>
-          <div
             className={subtitleVisible ? "fade-in-subtitle text-sm md:text-lg text-gray-300 max-w-xl text-center normal-case" : "text-sm md:text-lg text-gray-300 max-w-xl text-center normal-case"}
             style={{
               animationDelay: `${titleWords.length * 0.13 + 1.0 + subtitleDelay}s`,
