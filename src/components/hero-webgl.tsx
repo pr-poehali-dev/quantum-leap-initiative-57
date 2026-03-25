@@ -115,7 +115,7 @@ const Scene = () => {
 
 export const Hero3DWebGL = () => {
   const titleWords = "ПОРТАЛ".split(" ")
-  const subtitle = "Трансформационный практикум для экспертов и специалистов помогающих профессий."
+  const subtitle = "30 дней глубокой пересборки личности"
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -162,15 +162,34 @@ export const Hero3DWebGL = () => {
             ))}
           </div>
         </div>
-        <div className="text-xs md:text-xl xl:text-2xl 2xl:text-3xl mt-2 overflow-hidden text-white font-bold max-w-4xl mx-auto text-center px-4">
+        <div className="mt-4 overflow-hidden text-center px-4 flex flex-col items-center gap-3">
           <div
-            className={subtitleVisible ? "fade-in-subtitle" : ""}
+            className={subtitleVisible ? "fade-in-subtitle text-lg md:text-2xl xl:text-3xl text-white font-bold" : "text-lg md:text-2xl xl:text-3xl text-white font-bold"}
             style={{
               animationDelay: `${titleWords.length * 0.13 + 0.2 + subtitleDelay}s`,
               opacity: subtitleVisible ? undefined : 0,
             }}
           >
             {subtitle}
+          </div>
+          <div
+            className={subtitleVisible ? "fade-in-subtitle flex gap-6 text-sm md:text-base text-red-400 font-space-mono" : "flex gap-6 text-sm md:text-base text-red-400 font-space-mono"}
+            style={{
+              animationDelay: `${titleWords.length * 0.13 + 0.6 + subtitleDelay}s`,
+              opacity: subtitleVisible ? undefined : 0,
+            }}
+          >
+            <span>📅 Старт: 6 апреля</span>
+            <span>🌐 Формат: онлайн</span>
+          </div>
+          <div
+            className={subtitleVisible ? "fade-in-subtitle text-sm md:text-lg text-gray-300 max-w-xl text-center normal-case" : "text-sm md:text-lg text-gray-300 max-w-xl text-center normal-case"}
+            style={{
+              animationDelay: `${titleWords.length * 0.13 + 1.0 + subtitleDelay}s`,
+              opacity: subtitleVisible ? undefined : 0,
+            }}
+          >
+            Это не обучение. Это переход на новый уровень жизни и реализации.
           </div>
         </div>
       </div>
