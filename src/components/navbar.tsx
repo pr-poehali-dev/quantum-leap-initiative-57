@@ -15,23 +15,7 @@ export function Navbar() {
             </h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              <a
-                href="#applications"
-                className="font-geist text-white hover:text-red-500 transition-colors duration-200"
-              >
-                Программа
-              </a>
-              <a href="#testimonials" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
-                Отзывы
-              </a>
-              <a href="#faq" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
-                Вопросы
-              </a>
-            </div>
-          </div>
+          <div />
 
           {/* Start date */}
           <div className="hidden md:block">
@@ -55,27 +39,6 @@ export function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/98 border-t border-red-500/20">
-              <a
-                href="#applications"
-                className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                Программа
-              </a>
-              <a
-                href="#testimonials"
-                className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                Отзывы
-              </a>
-              <a
-                href="#faq"
-                className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                Вопросы
-              </a>
               <div className="px-3 py-2">
                 <span className="text-red-400 font-space-mono text-sm">📅 Старт: 6 апреля</span>
               </div>
