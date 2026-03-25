@@ -147,19 +147,16 @@ export const Hero3DWebGL = () => {
 
       <div className="h-screen uppercase items-center w-full absolute z-[60] pointer-events-none px-10 flex justify-center flex-col">
         <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold font-orbitron">
-          <div className="flex space-x-2 lg:space-x-6 overflow-hidden text-white">
-            {titleWords.map((word, index) => (
-              <div
-                key={index}
-                className={index < visibleWords ? "fade-in" : ""}
-                style={{
-                  animationDelay: `${index * 0.13 + (delays[index] || 0)}s`,
-                  opacity: index < visibleWords ? undefined : 0,
-                }}
-              >
-                {word}
-              </div>
-            ))}
+          <div className="flex overflow-hidden">
+            <div
+              className={0 < visibleWords ? "fade-in text-white" : "text-white"}
+              style={{
+                animationDelay: `${(delays[0] || 0)}s`,
+                opacity: 0 < visibleWords ? undefined : 0,
+              }}
+            >
+              ПОР<span className="text-red-500">ТАЛ</span>
+            </div>
           </div>
         </div>
         <div className="mt-4 overflow-hidden text-center px-4 flex flex-col items-center gap-3">

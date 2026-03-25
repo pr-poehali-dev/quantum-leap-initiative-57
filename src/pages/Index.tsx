@@ -7,8 +7,6 @@ import { SafetySection } from "@/components/safety-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
-
 export default function Index() {
   return (
     <div className="dark">
@@ -23,7 +21,6 @@ export default function Index() {
         <FAQSection />
         <CTASection />
       </main>
-      <Footer />
     </div>
   )
 }
