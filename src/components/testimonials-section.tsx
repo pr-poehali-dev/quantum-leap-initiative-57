@@ -22,27 +22,27 @@ export function TestimonialsSection() {
   ]
 
   return (
-    <section id="testimonials" className="py-24 px-6 bg-black">
+    <section id="testimonials" className="py-24 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-orbitron text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 font-orbitron text-center">
           Ведущие практикума
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {experts.map((expert) => (
-            <div key={expert.name} className="border border-white/10 rounded-2xl overflow-hidden bg-zinc-950 flex flex-col gap-4">
+            <div key={expert.name} className="border border-black/10 rounded-2xl overflow-hidden bg-gray-50 flex flex-col gap-4">
               <div className="w-full h-64 overflow-hidden">
                 <img src={expert.photo} alt={expert.name} className="w-full h-full object-cover object-top" />
               </div>
               <div className="px-6 pb-6 flex flex-col gap-4">
                 <div>
-                  <p className="text-white text-xl font-bold font-orbitron">{expert.name}</p>
-                  <p className="text-gray-400 text-sm mt-1 leading-relaxed">{expert.title}</p>
+                  <p className="text-black text-xl font-bold font-orbitron">{expert.name}</p>
+                  <p className="text-gray-500 text-sm mt-1 leading-relaxed">{expert.title}</p>
                 </div>
                 <div>
-                  <p className="text-gray-500 text-xs uppercase tracking-widest mb-3 font-space-mono">Работает с:</p>
+                  <p className="text-gray-400 text-xs uppercase tracking-widest mb-3 font-space-mono">Работает с:</p>
                   <ul className="space-y-2">
                     {expert.works.map(w => (
-                      <li key={w} className="flex items-start gap-2 text-gray-300 text-sm leading-relaxed">
+                      <li key={w} className="flex items-start gap-2 text-gray-600 text-sm leading-relaxed">
                         <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5" />
                         {w}
                       </li>

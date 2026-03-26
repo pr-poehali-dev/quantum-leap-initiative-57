@@ -6,10 +6,10 @@ export function TechnologySection() {
   return (
     <>
       {/* Слайд 6 */}
-      <section className="py-24 px-6 bg-black">
+      <section className="py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <p className="text-gray-400 text-sm uppercase tracking-widest mb-4 font-space-mono">30 дней · 3 этапа</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-orbitron">
+          <p className="text-gray-500 text-sm uppercase tracking-widest mb-4 font-space-mono">30 дней · 3 этапа</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 font-orbitron">
             Практикум длится 30 дней и проходит в 3 этапа трансформации
           </h2>
           <div className="space-y-6">
@@ -23,26 +23,26 @@ export function TechnologySection() {
                   <span className="text-red-500 text-xl font-bold font-orbitron leading-none">{stage.num}</span>
                 </div>
                 <div>
-                  <span className="text-gray-400 text-xs uppercase tracking-widest font-space-mono">{stage.label}</span>
-                  <p className="text-white text-xl font-semibold mt-0.5">{stage.title}</p>
+                  <span className="text-gray-500 text-xs uppercase tracking-widest font-space-mono">{stage.label}</span>
+                  <p className="text-black text-xl font-semibold mt-0.5">{stage.title}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-gray-400 leading-relaxed">
+          <p className="mt-10 text-gray-500 leading-relaxed">
             Каждый этап — это глубокая работа с внутренними механизмами, которые формируют реальность.
           </p>
         </div>
       </section>
 
       {/* Слайд 7 */}
-      <section className="py-24 px-6 bg-zinc-950">
+      <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <p className="text-red-500 text-sm uppercase tracking-widest mb-2 font-space-mono">1–7 день</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 font-orbitron">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 font-orbitron">
             Разоблачение старой линии
           </h2>
-          <p className="text-gray-400 mb-6">Мы работаем с:</p>
+          <p className="text-gray-500 mb-6">Мы работаем с:</p>
           <ul className="space-y-4 mb-10">
             {[
               "диагностикой повторяющихся сценариев",
@@ -50,15 +50,15 @@ export function TechnologySection() {
               "страхом роста и проявления",
               "личными и родовыми программами",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-4 text-white text-lg">
+              <li key={item} className="flex items-start gap-4 text-black text-lg">
                 <span className="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-2" />
                 {item}
               </li>
             ))}
           </ul>
           <div className="border border-red-500/30 rounded-xl p-5 bg-red-500/5">
-            <p className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-space-mono">Результат</p>
-            <p className="text-white text-lg">
+            <p className="text-gray-500 text-sm uppercase tracking-widest mb-2 font-space-mono">Результат</p>
+            <p className="text-black text-lg">
               Ясность и понимание — что именно удерживает старую траекторию жизни.
             </p>
           </div>
@@ -66,13 +66,13 @@ export function TechnologySection() {
       </section>
 
       {/* Слайд 8 */}
-      <section className="py-24 px-6 bg-black">
+      <section className="py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-red-500 text-sm uppercase tracking-widest mb-2 font-space-mono">8–14 день</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 font-orbitron">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 font-orbitron">
             Разрушение ограничивающей конструкции
           </h2>
-          <p className="text-gray-400 mb-6">Работаем с:</p>
+          <p className="text-gray-500 mb-6">Работаем с:</p>
           <ul className="space-y-4 mb-10">
             {[
               "бессознательными блоками",
@@ -80,15 +80,15 @@ export function TechnologySection() {
               "страхом ответственности",
               "энергетическими фиксациями",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-4 text-white text-lg">
+              <li key={item} className="flex items-start gap-4 text-black text-lg">
                 <span className="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-2" />
                 {item}
               </li>
             ))}
           </ul>
           <div className="border border-red-500/30 rounded-xl p-5 bg-red-500/5">
-            <p className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-space-mono">Результат</p>
-            <p className="text-white text-lg">
+            <p className="text-gray-500 text-sm uppercase tracking-widest mb-2 font-space-mono">Результат</p>
+            <p className="text-black text-lg">
               Внутренний перелом. Уходит напряжение и сжатие. Появляется ощущение силы.
             </p>
           </div>
@@ -96,13 +96,13 @@ export function TechnologySection() {
       </section>
 
       {/* Слайд 9 */}
-      <section className="py-24 px-6 bg-zinc-950">
+      <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <p className="text-red-500 text-sm uppercase tracking-widest mb-2 font-space-mono">15–21 день</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 font-orbitron">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 font-orbitron">
             Пересборка и стабилизация
           </h2>
-          <p className="text-gray-400 mb-6">Происходит:</p>
+          <p className="text-gray-500 mb-6">Происходит:</p>
           <ul className="space-y-4 mb-10">
             {[
               "формирование новой идентичности",
@@ -110,15 +110,15 @@ export function TechnologySection() {
               "стабилизация перед ростом",
               "фиксация новой линии решений",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-4 text-white text-lg">
+              <li key={item} className="flex items-start gap-4 text-black text-lg">
                 <span className="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-2" />
                 {item}
               </li>
             ))}
           </ul>
           <div className="border border-red-500/30 rounded-xl p-5 bg-red-500/5">
-            <p className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-space-mono">Результат</p>
-            <p className="text-white text-lg">
+            <p className="text-gray-500 text-sm uppercase tracking-widest mb-2 font-space-mono">Результат</p>
+            <p className="text-black text-lg">
               Устойчивость, внутренняя тишина, готовность действовать из новой позиции.
             </p>
           </div>

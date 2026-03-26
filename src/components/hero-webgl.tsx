@@ -137,19 +137,19 @@ export const Hero3DWebGL = () => {
   }, [visibleWords, titleWords.length])
 
   return (
-    <div className="h-screen bg-black relative overflow-hidden">
+    <div className="h-screen bg-white relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-10">
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
-        <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-black to-transparent" />
-        <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-black to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+        <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-white to-transparent" />
+        <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-white to-transparent" />
       </div>
 
       <div className="h-screen uppercase items-center w-full absolute z-[60] pointer-events-none px-10 flex justify-center flex-col">
         <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold font-orbitron">
           <div className="flex overflow-hidden">
             <div
-              className={0 < visibleWords ? "fade-in text-white" : "text-white"}
+              className={0 < visibleWords ? "fade-in text-black" : "text-black"}
               style={{
                 animationDelay: `${(delays[0] || 0)}s`,
                 opacity: 0 < visibleWords ? undefined : 0,
@@ -161,7 +161,7 @@ export const Hero3DWebGL = () => {
         </div>
         <div className="mt-4 overflow-hidden text-center px-4 flex flex-col items-center gap-3">
           <div
-            className={subtitleVisible ? "fade-in-subtitle text-lg md:text-2xl xl:text-3xl text-white font-bold" : "text-lg md:text-2xl xl:text-3xl text-white font-bold"}
+            className={subtitleVisible ? "fade-in-subtitle text-lg md:text-2xl xl:text-3xl text-black font-bold" : "text-lg md:text-2xl xl:text-3xl text-black font-bold"}
             style={{
               animationDelay: `${titleWords.length * 0.13 + 0.2 + subtitleDelay}s`,
               opacity: subtitleVisible ? undefined : 0,
@@ -170,7 +170,7 @@ export const Hero3DWebGL = () => {
             {subtitle}
           </div>
           <div
-            className={subtitleVisible ? "fade-in-subtitle text-sm md:text-lg text-gray-300 max-w-xl text-center normal-case" : "text-sm md:text-lg text-gray-300 max-w-xl text-center normal-case"}
+            className={subtitleVisible ? "fade-in-subtitle text-sm md:text-lg text-gray-600 max-w-xl text-center normal-case" : "text-sm md:text-lg text-gray-600 max-w-xl text-center normal-case"}
             style={{
               animationDelay: `${titleWords.length * 0.13 + 1.0 + subtitleDelay}s`,
               opacity: subtitleVisible ? undefined : 0,
@@ -189,7 +189,7 @@ export const Hero3DWebGL = () => {
           powerPreference: "high-performance",
         }}
         camera={{ position: [0, 0, 1] }}
-        style={{ background: "#000000" }}
+        style={{ background: "#ffffff" }}
       >
         <Scene />
       </Canvas>
